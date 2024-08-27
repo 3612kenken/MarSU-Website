@@ -16,3 +16,19 @@ Project Goals
 • Mobile Optimization: Ensure the website is fully responsive and functional on all devices.
 • Accessibility Compliance: Implement WCAG 2.1 standards to make the website accessible to all users, including those with disabilities.
 • Improved Performance: Optimize website speed, security, and SEO to increase traffic and user engagement.
+
+About Us
+
+  Web Developers:
+  
+  • Villi Dane M. Go
+  • Joshua Relatorres
+  • Kenneth L. Omiping
+
+  UX/UI Designers:
+  
+  • Kierven A. Villaruel
+  • Melvin Carpio
+  • Pollux Rey
+
+  Accessibility Specialist: Kierven A. Villaruel
