@@ -18,6 +18,61 @@ p{
     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
     animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background: var(--secondary); 
+  }
+
+.SideNav-Main{
+    height: 350px; /* 100% Full-height */
+
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    cursor: pointer;
+}
+.SideNav-Main li{
+  color: white;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 28px;
+  display: block;
+  transition: 0.3s;
+
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  linear-gradient(to right, var(--secondary), var(--secondary), var(--secondary));
+    background-size: 100% 0.2em, 0 0.2em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    
+}
+.SideNav-Main  li:hover, li:focus {
+    color: var(--secondary);
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+  
 
 @-webkit-keyframes sk-rotateplane {
     0% {
