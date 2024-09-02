@@ -29,7 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -384,7 +384,7 @@
                    <br>
                    <div class="input-group">
                      
-                       <button class="btn-event"> &nbsp;MON-FRI<br> <b style="font-size: 18px;">NOV 27-29</b></button>
+                       <button class="btn-event"> &nbsp;MON-FRI<br> <b style="font-size: 16px;">NOV 27-29</b></button>
                       <button class="btn-event-secondary">FINAL EXAMINATION </button>
                   </div>
                 </div>
@@ -397,7 +397,7 @@
                    <br>
                    <div class="input-group">
                      
-                       <button class="btn-event"> &nbsp;MON-FRI<br> <b style="font-size: 18px;">DEC 1-5</b></button>
+                       <button class="btn-event"> &nbsp;MON-FRI<br> <b style="font-size: 16px;">DEC 1-5</b></button>
                       <button class="btn-event-secondary">SEMESTRAL BREAK OF STUDENTS</button>
                   </div>
                 </div>
@@ -469,7 +469,7 @@
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 80%;">
                 
                 <h1 class="mb-0">Experience Excellence at Marinduque State University</h1>
-                <h6 class="text-primary">Our legacy of academic distinction, cutting-edge research, and transformative community engagement propels us to the forefront of innovation and education. At MARSU, we don’t just achieve; we set the standard.</h6>
+                <h6 class="text-primary">Our legacy of academic distinction, cutting-edge research, and transformative community engagement propels us to the forefront of innovation and education. At MarSU, we don’t just achieve; we set the standard.</h6>
             </div>
             <div class="row g-5 wow zoomIn" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -547,8 +547,15 @@
    
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-image: url('img/contents/bg-testimonials.png');">
        
-        <div class="container py-5" >
-
+        <div class="container" >
+            
+                <div class="carousel-bottom-track">
+                    
+                  <img class="mySlides w3-animate-right" src="img/contents/testimony_1.png" alt="" height="470px" />
+                  <img class="mySlides w3-animate-right" src="img/contents/testimony_2.png" alt="" height="470px" />
+                  <img class="mySlides w3-animate-right" src="img/contents/testimony_3.png" alt="" height="470px" />
+                </div>
+            
         </div>
        
     </div>
@@ -678,6 +685,23 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        var myIndex = 0;
+        carousel_bottom();
+        
+        function carousel_bottom() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel_bottom, 8000);    
+        }
+        </script>
 </body>
 
 </html>
